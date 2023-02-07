@@ -6,7 +6,12 @@ header{
 .foto-cv{
     margin-left: 45%;
     margin-top: 30px;
+    transition: all .4s ease-in-out;
 }
+
+.foto-cv:hover {
+    transform: scale(1.2);
+  }
 
 body{
     background: linear-gradient(315deg, #b2d0d7 0%, #d1d7a3 100%)
