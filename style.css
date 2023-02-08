@@ -11,7 +11,40 @@ header{
 
 .foto-cv:hover {
     transform: scale(1.2);
-  }
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    visibility: hidden;
+    transition: .3s ease all;
+    transform: scale(0.7);
+}
+
+.popup.active{
+    visibility: visible;
+}
+
+.btn-cerrar{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #bbbbbb;
+    transition: .3s ease all;
+}
 
 body{
     background: linear-gradient(315deg, #b2d0d7 0%, #d1d7a3 100%)
