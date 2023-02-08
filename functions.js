@@ -1,7 +1,10 @@
-/*$(document).ready(function(){
-    $('.foto-cv').hover(function() {
-        $(this).addClass('transition');
-    }, function() {
-        $(this).removeClass('transition');
-    });
-});*/
+var btnAbrirPopup = document.getElementById("foto-cv"),
+    btnCerrarPopup = document.getElementById("btn-cerrar");
+
+btnAbrirPopup.addEventListener("click", function(){
+    popup.classList.add("active");
+})
+
+btnCerrarPopup.addEventListener("click", function(){
+    popup.classList.remove("active");
+});
